@@ -460,6 +460,10 @@ header img {
     position: relative;  
 }
 
+.contact-center {
+    margin-left: 120px;
+}
+
 .footer-one::before {
     content: "";
     position: absolute;
