@@ -243,6 +243,26 @@ header img {
     fill: #141414;
 }
 
+.custom-shape-divider-top-efa-down {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: scaleY(-1);
+}
+
+.custom-shape-divider-top-efa-down svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 100px);
+    height: 50px;
+}
+
+.custom-shape-divider-top-efa-down .shape-fill {
+    fill: #141414;
+}
 /****** MAIN EFA ******/
 
 .container-efa {
