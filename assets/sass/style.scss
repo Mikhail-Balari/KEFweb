@@ -1,3 +1,16 @@
+$header-background-color: #BF9004;
+$color-white: white;
+$color-black: black;
+$color-gray: #858585;
+$header-button-hover-bg-color: #6e5302;
+$header-divider-fill-color: #141414;
+$color-blue-opacity-a9: #536063a9;
+$color-goldenrod: #ac8717;
+$color-black-opacity-02: rgba(0, 0, 0, 0.2);
+$color-black-opacity-0692: rgba(0, 0, 0, 0.692);
+$header-overlay-color: rgba(0, 0, 0, 0.8);
+$color-opacity-0836: rgba(0, 0, 0, 0.836);
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -29,7 +42,7 @@
 /****** NAVBAR ******/
 
 .collapse {
-    background-color: #BF9004;
+    background-color: $header-background-color;
 }
 
 .navbar-brand img {
@@ -39,11 +52,11 @@
 .navbar-nav a {
     font-size: 25px;
     font-family: 'Contrail One', cursive;
-    color: white;
+    color: $color-white;
 }
 
 .nav-link:hover {
-    color: black;
+    color: $color-black;
 }
 
 /****** HEADER INDEX ******/
@@ -64,7 +77,7 @@
     }
 
     .shape-fill {
-        fill: #BF9004;
+        fill: $header-background-color;
     }
 }
 
@@ -106,7 +119,7 @@ header img {
     }
 
     .shape-fill {
-        fill: #BF9004;
+        fill: $header-background-color;
     }
 }
 
@@ -119,13 +132,13 @@ header img {
 
 .colorTitulo {
     padding: 10px;
-    color: rgb(0, 0, 0);
+    color: $color-black;
     text-align: center;
     margin-top: 50px;
     font-style: italic;
     font-size: 45px;
     font-family: 'Contrail One', cursive;
-    background-color: #BF9004;
+    background-color: $header-background-color;
 }
 
 .p-index {
@@ -150,7 +163,7 @@ header img {
         position: relative;
         width: 100%;
         height: 100%;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 20px $color-black-opacity-02;
         border-radius: 28px;
         transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
         transform-style: preserve-3d;
@@ -176,7 +189,7 @@ header img {
             display: grid;
             place-items: center;
             padding: 32px;
-            background-color: #858585;
+            background-color: $color-gray;
             transform: rotateY(180deg);
         }
     }
@@ -203,7 +216,7 @@ header img {
     }
 
     .header-overlay {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: $header-overlay-color;
         height: 350px;
         width: 100%;
     }
@@ -216,14 +229,14 @@ header img {
 
         &-h1 {
             text-align: center;
-            color: #ffffff;
+            color: $color-white;
             font-size: 40px;
             margin-bottom: 20px;
         }
 
         &-p {
             text-align: center;
-            color: #ffffff;
+            color: $color-white;
             font-size: 18px;
             margin-bottom: 50px;
         }
@@ -239,14 +252,14 @@ header img {
 
     .btn-primary-efa {
         display: block;
-        color: white;
+        color: $color-white;
         margin: 0 auto;
-        background-color: #BF9004;
+        background-color: $header-background-color;
         width: 200px;
 
         &:hover {
-            color: white;
-            background-color: #6e5302;
+            color: $color-white;
+            background-color: $header-button-hover-bg-color;
         }
     }
 
@@ -266,7 +279,7 @@ header img {
         }
 
         .shape-fill {
-            fill: #141414;
+            fill: $header-divider-fill-color;
         }
     }
 
@@ -287,7 +300,7 @@ header img {
         }
 
         .shape-fill {
-            fill: #141414;
+            fill: $header-divider-fill-color;
         }
     }
 }
@@ -295,11 +308,11 @@ header img {
 /****** MAIN EFA ******/
 
 .container-efa {
-    background: #ffffff;
+    background: $color-white;
     padding: 50px 0;
 
     .div-tittle {
-        background-color: #000000;
+        background-color: $color-black;
         padding: 1px;
         text-align: center;
         margin-bottom: 30px;
@@ -307,15 +320,15 @@ header img {
         .card-tittle-efa {
             font-size: 40px;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: $color-white;
         }
     }
 
     .card-efa {
         max-width: 1200px;
         margin: 0 auto;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.692), #536063a9);
-        box-shadow: 0 0px 10px rgb(0, 0, 0);
+        background: linear-gradient(to bottom, $color-black-opacity-0692, $color-blue-opacity-a9);
+        box-shadow: 0 0px 10px $color-black;
         border-radius: 5px;
         overflow: hidden;
 
@@ -326,7 +339,7 @@ header img {
         .card-text-efa {
             font-size: 1.2rem;
             line-height: 1.6;
-            color: #ffffff;
+            color: $color-white;
             text-align: justify;
         }
     }
@@ -351,12 +364,12 @@ header img {
     }
 
     .shape-fill {
-        fill: #141414;
+        fill: $header-divider-fill-color;
     }
 }
 
 .header-kef {
-    background-color: rgb(0, 0, 0);
+    background-color: $color-black;
     padding: 10px;
 
     .div-kef {
@@ -405,13 +418,13 @@ header img {
     }
 
     .shape-fill {
-        fill: #141414;
+        fill: $header-divider-fill-color;
     }
 }
 
 /****** MAIN KEF ******/
 .main-kef {
-    background-color: #fff;
+    background-color: $color-white;
     padding: 20px;
 
     .seccion-kef {
@@ -437,11 +450,11 @@ header img {
 /****** HEADER SOBRE-MI ******/
 
 .header {
-    background-color:  #BF9004;
+    background-color:  $header-background-color;
     padding: 0;
   
     .text-uppercase {
-      color: #ffffff;
+      color: $color-white;
       text-align: center;
       padding: 0 30px;
     }
@@ -459,7 +472,7 @@ header img {
         text-align: justify;
         margin-right: 13px;
         margin-left: 13px;
-        color: #ffffff;
+        color: $color-white;
         font-style: oblique;
       }
     }
@@ -483,14 +496,14 @@ header img {
   
 /****** MAIN CONTACTO ******/
 .card {
-    background-color: #000000;
+    background-color: $color-black;
   
     &-shadow {
-      box-shadow: 0 0.25rem 0.75rem  #ac8717;
+      box-shadow: 0 0.25rem 0.75rem  $color-goldenrod;
     }
   
     &-title-contacto {
-      color: #cfa117;
+      color: $color-goldenrod;
       font-style: italic;
       text-align: center;
       padding-bottom: 35px;
@@ -503,7 +516,7 @@ header img {
     }
   
     .form-label {
-      color: white;
+      color: $color-white;
     }
   
     .map-container {
@@ -529,12 +542,12 @@ header img {
     }
   
     .btn-primary-contacto {
-      color:white;
-      background-color:#BF9004;
+      color:$color-white;
+      background-color:$header-background-color;
   
       &:hover {
-        color:white;
-        background-color:#6e5302;
+        color: $color-white;
+        background-color: $header-button-hover-bg-color;
       }
     }
 }
@@ -553,7 +566,7 @@ header img {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.836);
+      background-color: $color-opacity-0836;
     }
   
     .contact-center {
@@ -563,14 +576,14 @@ header img {
     .footer-h5,
     .footer-p1,
     .footer-p2 {
-      color: #fff;
+      color: $color-white;
       position: relative;
       z-index: 1;
     }
   
     .direccion,
     .telefono {
-      color: #BF9004;
+      color: $header-background-color;
     }
   
     .fa-phone,
@@ -586,11 +599,11 @@ header img {
     .mr-instagram {
       margin: 10px;
       margin-left: 36px;
-      color: #BF9004;
+      color: $header-background-color;
       font-size: 25px;
   
       &:hover {
-        color: #ffffff;
+        color: $color-white;
       }
     }
   
@@ -598,36 +611,36 @@ header img {
     .mr-telegram,
     .mr-whatsapp {
       margin: 10px;
-      color: #BF9004;
+      color: $header-background-color;
       font-size: 25px;
   
       &:hover {
-        color: #ffffff;
+        color: $color-white;
       }
     }
   
     .list-unstyled li a {
       text-decoration: none;
-      color: #BF9004;
+      color: $header-background-color;
       position: relative;
       z-index: 1;
   
       &:hover {
         text-decoration: none;
-        color: #ffffff;
+        color: $color-white;
         font-style: italic;
       }
     }
 }
   
 .sub-footer {
-    background-color: #000000;
+    background-color: $color-black;
 
     .reg {
-    color: #ffffff;
+    color: $color-white;
 
     em {
-        color: #BF9004;
+        color: $header-background-color;
     }
     }
 }

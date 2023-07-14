@@ -112,7 +112,7 @@ header img {
 
 .colorTitulo {
   padding: 10px;
-  color: rgb(0, 0, 0);
+  color: black;
   text-align: center;
   margin-top: 50px;
   font-style: italic;
@@ -198,13 +198,13 @@ header img {
 }
 .header-efa .efa-text-h1 {
   text-align: center;
-  color: #ffffff;
+  color: white;
   font-size: 40px;
   margin-bottom: 20px;
 }
 .header-efa .efa-text-p {
   text-align: center;
-  color: #ffffff;
+  color: white;
   font-size: 18px;
   margin-bottom: 50px;
 }
@@ -262,11 +262,11 @@ header img {
 
 /****** MAIN EFA ******/
 .container-efa {
-  background: #ffffff;
+  background: white;
   padding: 50px 0;
 }
 .container-efa .div-tittle {
-  background-color: #000000;
+  background-color: black;
   padding: 1px;
   text-align: center;
   margin-bottom: 30px;
@@ -274,13 +274,13 @@ header img {
 .container-efa .div-tittle .card-tittle-efa {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: white;
 }
 .container-efa .card-efa {
   max-width: 1200px;
   margin: 0 auto;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.692), rgba(83, 96, 99, 0.662745098));
-  box-shadow: 0 0px 10px rgb(0, 0, 0);
+  box-shadow: 0 0px 10px black;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -290,7 +290,7 @@ header img {
 .container-efa .card-efa .card-text-efa {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: white;
   text-align: justify;
 }
 
@@ -315,7 +315,7 @@ header img {
 }
 
 .header-kef {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   padding: 10px;
 }
 .header-kef .div-kef {
@@ -366,7 +366,7 @@ header img {
 
 /****** MAIN KEF ******/
 .main-kef {
-  background-color: #fff;
+  background-color: white;
   padding: 20px;
 }
 .main-kef .seccion-kef {
@@ -392,7 +392,7 @@ header img {
   padding: 0;
 }
 .header .text-uppercase {
-  color: #ffffff;
+  color: white;
   text-align: center;
   padding: 0 30px;
 }
@@ -407,7 +407,7 @@ header img {
   text-align: justify;
   margin-right: 13px;
   margin-left: 13px;
-  color: #ffffff;
+  color: white;
   font-style: oblique;
 }
 .header .header-image {
@@ -427,13 +427,13 @@ header img {
 /****** MAIN SOBRE-MI ******/
 /****** MAIN CONTACTO ******/
 .card {
-  background-color: #000000;
+  background-color: black;
 }
 .card-shadow {
   box-shadow: 0 0.25rem 0.75rem #ac8717;
 }
 .card-title-contacto {
-  color: #cfa117;
+  color: #ac8717;
   font-style: italic;
   text-align: center;
   padding-bottom: 35px;
@@ -494,7 +494,7 @@ header img {
 .footer-one .footer-h5,
 .footer-one .footer-p1,
 .footer-one .footer-p2 {
-  color: #fff;
+  color: white;
   position: relative;
   z-index: 1;
 }
@@ -517,7 +517,7 @@ header img {
   font-size: 25px;
 }
 .footer-one .mr-instagram:hover {
-  color: #ffffff;
+  color: white;
 }
 .footer-one .mr-linkedin,
 .footer-one .mr-telegram,
@@ -529,7 +529,7 @@ header img {
 .footer-one .mr-linkedin:hover,
 .footer-one .mr-telegram:hover,
 .footer-one .mr-whatsapp:hover {
-  color: #ffffff;
+  color: white;
 }
 .footer-one .list-unstyled li a {
   text-decoration: none;
@@ -539,15 +539,15 @@ header img {
 }
 .footer-one .list-unstyled li a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-style: italic;
 }
 
 .sub-footer {
-  background-color: #000000;
+  background-color: black;
 }
 .sub-footer .reg {
-  color: #ffffff;
+  color: white;
 }
 .sub-footer .reg em {
   color: #BF9004;
