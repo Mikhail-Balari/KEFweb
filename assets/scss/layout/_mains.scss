@@ -81,11 +81,14 @@
 
         .flip-card-back {
             font-size: 1.25rem;
+            font-style: italic;
+            font-family: 'Contrail One', cursive;
+            color: $white-1;
             text-align: center;
             display: grid;
             place-items: center;
             padding: 32px;
-            background-color: $gray-1;
+            background-color: $orange-1;
             transform: rotateY(180deg);
         }
     }

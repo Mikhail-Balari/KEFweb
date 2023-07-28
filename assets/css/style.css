@@ -355,11 +355,14 @@ header img {
 }
 .flip-card .flip-card-inner .flip-card-back {
   font-size: 1.25rem;
+  font-style: italic;
+  font-family: "Contrail One", cursive;
+  color: white;
   text-align: center;
   display: grid;
   place-items: center;
   padding: 32px;
-  background-color: #858585;
+  background-color: #BF9004;
   transform: rotateY(180deg);
 }
 .flip-card:hover .flip-card-inner {
