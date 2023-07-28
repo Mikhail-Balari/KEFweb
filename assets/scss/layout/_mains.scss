@@ -1,0 +1,229 @@
+/****** MAIN INDEX ******/
+.custom-shape-divider-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 100px);
+        height: 50px;
+    }
+
+    .shape-fill {
+        fill: $orange-1;
+    }
+}
+
+.Titulo {
+    margin-inline: 1px;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 0;
+}
+
+.colorTitulo {
+    padding: 10px;
+    color: $black-1;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 45px;
+    font-family: 'Contrail One', cursive;
+    background-color: $orange-1;
+}
+
+.p-index {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.cards-grid {
+    display: flex;
+    grid-gap: 80px;
+    padding-bottom: 60px;
+}
+
+.flip-card {
+    width: 320px;
+    height: 504px;
+    perspective: 2000px;
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 20px $black-3;
+        border-radius: 28px;
+        transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+        transform-style: preserve-3d;
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 28px;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .flip-card-back {
+            font-size: 1.25rem;
+            text-align: center;
+            display: grid;
+            place-items: center;
+            padding: 32px;
+            background-color: $gray-1;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover {
+        .flip-card-inner {
+        transform: rotateY(-180deg);
+        }
+    }
+}
+  
+
+
+/****** MAIN EFA ******/
+
+.container-efa {
+    background: $white-1;
+    padding: 50px 0;
+
+    .div-tittle {
+        background-color: $black-1;
+        padding: 1px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        .card-tittle-efa {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: $white-1;
+        }
+    }
+
+    .card-efa {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: linear-gradient(to bottom, $black-4, $gray-2);
+        box-shadow: 0 0px 10px $black-1;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .card-body-efa {
+            padding: 40px;
+        }
+
+        .card-text-efa {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: $white-1;
+            text-align: justify;
+        }
+    }
+}
+
+
+
+/****** MAIN KEF ******/
+.main-kef {
+    background-color: $white-1;
+    padding: 20px;
+
+    .seccion-kef {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        padding-top: 30px;
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    }
+}
+  
+
+  
+/****** MAIN SOBRE-MI ******/
+  
+/****** MAIN CONTACTO ******/
+.card {
+    background-color: $black-1;
+  
+    &-shadow {
+      box-shadow: 0 0.25rem 0.75rem  $orange-2;
+    }
+  
+    &-title-contacto {
+      color: $orange-2;
+      font-style: italic;
+      text-align: center;
+      padding-bottom: 35px;
+      font-family: 'Contrail One', cursive;
+      font-size: 30px;
+    }
+  
+    &-formulario {
+      margin-bottom: 100px;
+    }
+  
+    .form-label {
+      color: $white-1;
+    }
+  
+    .map-container {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 115px;
+    }
+  
+    @media (max-width: 767px) {
+      .row.d-flex.align-items-start {
+        flex-direction: column;
+      }
+  
+      .col-md-1 {
+        display: none; /* Oculto la columna vacía en dispositivos móviles */
+      }
+  
+      .map-container {
+        margin-top: 0; /* Elimino el margen superior en dispositivos móviles */
+      }
+    }
+  
+    .btn-primary-contacto {
+      color:$white-1;
+      background-color:$orange-1;
+  
+      &:hover {
+        color: $white-1;
+        background-color: $brawn-1;
+      }
+    }
+}
