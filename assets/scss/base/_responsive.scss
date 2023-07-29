@@ -1,27 +1,40 @@
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "variables";
+
 
 /* Estilos para pantallas de escritorio */
-@media screen and (min-width: 992px) {
-    .navbar-brand img {
-        height: 200px;
+@media screen and (min-width: $desktop-breakpoint) {
+    .cards-grid {
+      display: flex;
+      flex-wrap: wrap;
+      
+      .flip-card {
+        flex: 1 0 10%; /* Ajusta el tamaño de cada flip card para que ocupe el 30% del ancho del contenedor */
+        margin: 10px; /* Espacio entre las flip cards */
+      }
     }
-}
-
-/* Estilos para tabletas */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .navbar-brand img {
-        height: 150px;
+  }
+  
+  /* Estilos para tabletas */
+  @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+    .cards-grid {
+      display: flex;
+      flex-wrap: wrap;
+      
+      .flip-card {
+        flex: 1 0 45%; /* Ajusta el tamaño de cada flip card para que ocupe el 45% del ancho del contenedor */
+        margin: 10px; /* Espacio entre las flip cards */
+      }
     }
-}
-
-/* Estilos para teléfonos móviles */
-@media screen and (max-width: 767px) {
-    .navbar-brand img {
-        height: 100px;
+  }
+  
+  /* Estilos para teléfonos móviles */
+  @media screen and (max-width: $tablet-breakpoint) {
+    .cards-grid {
+      display: block; /* Cambia a una sola columna en pantallas más pequeñas */
+      
+      .flip-card {
+        width: 100%; /* Ocupa el ancho completo del contenedor en pantallas pequeñas */
+        margin: 10px 0; /* Espacio entre las flip cards */
+      }
     }
-}
+  }
